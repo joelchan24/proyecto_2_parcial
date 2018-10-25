@@ -92,6 +92,11 @@ public class GUIInicio extends javax.swing.JFrame {
         jlEmpleados.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/assistaff/resources/users.png"))); // NOI18N
         jlEmpleados.setText("    Empleados");
         jlEmpleados.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jlEmpleados.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jlEmpleadosMouseClicked(evt);
+            }
+        });
 
         panelActivoEmpleados.setBackground(new java.awt.Color(21, 100, 191));
 
@@ -319,6 +324,10 @@ public class GUIInicio extends javax.swing.JFrame {
         // TODO add your handling code here:
         super.setState(JFrame.ICONIFIED);
     }//GEN-LAST:event_jlMinimizeMouseClicked
+
+    private void jlEmpleadosMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlEmpleadosMouseClicked
+      
+    }//GEN-LAST:event_jlEmpleadosMouseClicked
 
     /**
      * @param args the command line arguments

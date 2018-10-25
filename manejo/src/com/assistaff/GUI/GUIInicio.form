@@ -212,6 +212,9 @@
               <Color id="Cursor de Mano"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jlEmpleadosMouseClicked"/>
+          </Events>
         </Component>
         <Container class="javax.swing.JPanel" name="panelActivoEmpleados">
           <Properties>
