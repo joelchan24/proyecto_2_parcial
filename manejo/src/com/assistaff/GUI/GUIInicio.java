@@ -38,14 +38,20 @@ public class GUIInicio extends javax.swing.JFrame {
         panelMenu = new javax.swing.JPanel();
         jlLogo = new javax.swing.JLabel();
         jlInicio = new javax.swing.JLabel();
-        jPanel1 = new javax.swing.JPanel();
+        panelActivoInicio = new javax.swing.JPanel();
+        jlEmpleados = new javax.swing.JLabel();
+        panelActivoEmpleados = new javax.swing.JPanel();
+        jlPuestos = new javax.swing.JLabel();
+        panelActivoPuestos = new javax.swing.JPanel();
+        jlFechasLaboeales = new javax.swing.JLabel();
+        panelActivoFechasLaborales = new javax.swing.JPanel();
         panelBarraAzuk = new javax.swing.JPanel();
         panelTitleBar = new javax.swing.JPanel();
         jlTitle = new javax.swing.JLabel();
         jlExit = new javax.swing.JLabel();
         jlMinimize = new javax.swing.JLabel();
         jlSettings = new javax.swing.JLabel();
-        panelInicio = new javax.swing.JPanel();
+        panelMaster = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Assistaff - 2018");
@@ -53,7 +59,6 @@ public class GUIInicio extends javax.swing.JFrame {
         setFont(new java.awt.Font("Montserrat", 0, 14)); // NOI18N
         setMaximumSize(new java.awt.Dimension(1280, 720));
         setMinimumSize(new java.awt.Dimension(1280, 720));
-        setPreferredSize(new java.awt.Dimension(1280, 720));
         setResizable(false);
         setSize(new java.awt.Dimension(1280, 720));
 
@@ -67,17 +72,75 @@ public class GUIInicio extends javax.swing.JFrame {
         jlInicio.setForeground(new java.awt.Color(255, 255, 255));
         jlInicio.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/assistaff/resources/home.png"))); // NOI18N
         jlInicio.setText("    Inicio");
+        jlInicio.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
-        jPanel1.setBackground(new java.awt.Color(21, 100, 191));
+        panelActivoInicio.setBackground(new java.awt.Color(21, 100, 191));
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        javax.swing.GroupLayout panelActivoInicioLayout = new javax.swing.GroupLayout(panelActivoInicio);
+        panelActivoInicio.setLayout(panelActivoInicioLayout);
+        panelActivoInicioLayout.setHorizontalGroup(
+            panelActivoInicioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 8, Short.MAX_VALUE)
         );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        panelActivoInicioLayout.setVerticalGroup(
+            panelActivoInicioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 48, Short.MAX_VALUE)
+        );
+
+        jlEmpleados.setFont(new java.awt.Font("Montserrat", 0, 24)); // NOI18N
+        jlEmpleados.setForeground(new java.awt.Color(255, 255, 255));
+        jlEmpleados.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/assistaff/resources/users.png"))); // NOI18N
+        jlEmpleados.setText("    Empleados");
+        jlEmpleados.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+
+        panelActivoEmpleados.setBackground(new java.awt.Color(21, 100, 191));
+
+        javax.swing.GroupLayout panelActivoEmpleadosLayout = new javax.swing.GroupLayout(panelActivoEmpleados);
+        panelActivoEmpleados.setLayout(panelActivoEmpleadosLayout);
+        panelActivoEmpleadosLayout.setHorizontalGroup(
+            panelActivoEmpleadosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 8, Short.MAX_VALUE)
+        );
+        panelActivoEmpleadosLayout.setVerticalGroup(
+            panelActivoEmpleadosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 48, Short.MAX_VALUE)
+        );
+
+        jlPuestos.setFont(new java.awt.Font("Montserrat", 0, 24)); // NOI18N
+        jlPuestos.setForeground(new java.awt.Color(255, 255, 255));
+        jlPuestos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/assistaff/resources/file.png"))); // NOI18N
+        jlPuestos.setText("    Puestos");
+        jlPuestos.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+
+        panelActivoPuestos.setBackground(new java.awt.Color(21, 100, 191));
+
+        javax.swing.GroupLayout panelActivoPuestosLayout = new javax.swing.GroupLayout(panelActivoPuestos);
+        panelActivoPuestos.setLayout(panelActivoPuestosLayout);
+        panelActivoPuestosLayout.setHorizontalGroup(
+            panelActivoPuestosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 8, Short.MAX_VALUE)
+        );
+        panelActivoPuestosLayout.setVerticalGroup(
+            panelActivoPuestosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 48, Short.MAX_VALUE)
+        );
+
+        jlFechasLaboeales.setFont(new java.awt.Font("Montserrat", 0, 24)); // NOI18N
+        jlFechasLaboeales.setForeground(new java.awt.Color(255, 255, 255));
+        jlFechasLaboeales.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/assistaff/resources/calendar.png"))); // NOI18N
+        jlFechasLaboeales.setText("    Fechas laborales");
+        jlFechasLaboeales.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+
+        panelActivoFechasLaborales.setBackground(new java.awt.Color(21, 100, 191));
+
+        javax.swing.GroupLayout panelActivoFechasLaboralesLayout = new javax.swing.GroupLayout(panelActivoFechasLaborales);
+        panelActivoFechasLaborales.setLayout(panelActivoFechasLaboralesLayout);
+        panelActivoFechasLaboralesLayout.setHorizontalGroup(
+            panelActivoFechasLaboralesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 8, Short.MAX_VALUE)
+        );
+        panelActivoFechasLaboralesLayout.setVerticalGroup(
+            panelActivoFechasLaboralesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 48, Short.MAX_VALUE)
         );
 
@@ -90,10 +153,25 @@ public class GUIInicio extends javax.swing.JFrame {
                 .addComponent(jlLogo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGap(8, 8, 8))
             .addGroup(panelMenuLayout.createSequentialGroup()
-                .addGap(0, 0, 0)
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(8, 8, 8)
-                .addComponent(jlInicio, javax.swing.GroupLayout.PREFERRED_SIZE, 304, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(panelMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(panelMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                        .addGroup(panelMenuLayout.createSequentialGroup()
+                            .addComponent(panelActivoPuestos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGap(8, 8, 8)
+                            .addComponent(jlPuestos, javax.swing.GroupLayout.PREFERRED_SIZE, 304, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(panelMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(panelMenuLayout.createSequentialGroup()
+                                .addComponent(panelActivoInicio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(8, 8, 8)
+                                .addComponent(jlInicio, javax.swing.GroupLayout.PREFERRED_SIZE, 304, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(panelMenuLayout.createSequentialGroup()
+                                .addComponent(panelActivoEmpleados, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(8, 8, 8)
+                                .addComponent(jlEmpleados, javax.swing.GroupLayout.PREFERRED_SIZE, 304, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                    .addGroup(panelMenuLayout.createSequentialGroup()
+                        .addComponent(panelActivoFechasLaborales, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(8, 8, 8)
+                        .addComponent(jlFechasLaboeales, javax.swing.GroupLayout.PREFERRED_SIZE, 304, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(0, 0, Short.MAX_VALUE))
         );
         panelMenuLayout.setVerticalGroup(
@@ -104,8 +182,20 @@ public class GUIInicio extends javax.swing.JFrame {
                 .addGap(80, 80, 80)
                 .addGroup(panelMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jlInicio, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(450, Short.MAX_VALUE))
+                    .addComponent(panelActivoInicio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(32, 32, 32)
+                .addGroup(panelMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jlEmpleados, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(panelActivoEmpleados, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(32, 32, 32)
+                .addGroup(panelMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jlPuestos, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(panelActivoPuestos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(32, 32, 32)
+                .addGroup(panelMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jlFechasLaboeales, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(panelActivoFechasLaborales, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(210, Short.MAX_VALUE))
         );
 
         panelBarraAzuk.setBackground(new java.awt.Color(21, 100, 191));
@@ -134,6 +224,7 @@ public class GUIInicio extends javax.swing.JFrame {
         jlTitle.setText("Assistaff - 2018");
 
         jlExit.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/assistaff/resources/cancel_gray.png"))); // NOI18N
+        jlExit.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jlExit.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jlExitMouseClicked(evt);
@@ -141,13 +232,15 @@ public class GUIInicio extends javax.swing.JFrame {
         });
 
         jlMinimize.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/assistaff/resources/minus-symbol_gray.png"))); // NOI18N
+        jlMinimize.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jlMinimize.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jlMinimizeMouseClicked(evt);
             }
         });
 
-        jlSettings.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/assistaff/resources/settings.png"))); // NOI18N
+        jlSettings.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/assistaff/resources/sign-in.png"))); // NOI18N
+        jlSettings.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
         javax.swing.GroupLayout panelTitleBarLayout = new javax.swing.GroupLayout(panelTitleBar);
         panelTitleBar.setLayout(panelTitleBarLayout);
@@ -176,16 +269,16 @@ public class GUIInicio extends javax.swing.JFrame {
                 .addContainerGap(16, Short.MAX_VALUE))
         );
 
-        panelInicio.setBackground(new java.awt.Color(255, 255, 255));
+        panelMaster.setBackground(new java.awt.Color(255, 255, 255));
 
-        javax.swing.GroupLayout panelInicioLayout = new javax.swing.GroupLayout(panelInicio);
-        panelInicio.setLayout(panelInicioLayout);
-        panelInicioLayout.setHorizontalGroup(
-            panelInicioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        javax.swing.GroupLayout panelMasterLayout = new javax.swing.GroupLayout(panelMaster);
+        panelMaster.setLayout(panelMasterLayout);
+        panelMasterLayout.setHorizontalGroup(
+            panelMasterLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 0, Short.MAX_VALUE)
         );
-        panelInicioLayout.setVerticalGroup(
-            panelInicioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        panelMasterLayout.setVerticalGroup(
+            panelMasterLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 0, Short.MAX_VALUE)
         );
 
@@ -198,9 +291,7 @@ public class GUIInicio extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(panelBarraAzuk, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(panelTitleBar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(0, 0, 0)
-                        .addComponent(panelInicio, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                    .addComponent(panelMaster, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -211,7 +302,7 @@ public class GUIInicio extends javax.swing.JFrame {
                         .addGap(0, 0, 0)
                         .addComponent(panelTitleBar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(0, 0, 0)
-                        .addComponent(panelInicio, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addComponent(panelMaster, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addComponent(panelMenu, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(0, 0, 0))
         );
@@ -265,15 +356,21 @@ public class GUIInicio extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JPanel jPanel1;
+    private javax.swing.JLabel jlEmpleados;
     private javax.swing.JLabel jlExit;
+    private javax.swing.JLabel jlFechasLaboeales;
     private javax.swing.JLabel jlInicio;
     private javax.swing.JLabel jlLogo;
     private javax.swing.JLabel jlMinimize;
+    private javax.swing.JLabel jlPuestos;
     private javax.swing.JLabel jlSettings;
     private javax.swing.JLabel jlTitle;
+    private javax.swing.JPanel panelActivoEmpleados;
+    private javax.swing.JPanel panelActivoFechasLaborales;
+    private javax.swing.JPanel panelActivoInicio;
+    private javax.swing.JPanel panelActivoPuestos;
     private javax.swing.JPanel panelBarraAzuk;
-    private javax.swing.JPanel panelInicio;
+    private javax.swing.JPanel panelMaster;
     private javax.swing.JPanel panelMenu;
     private javax.swing.JPanel panelTitleBar;
     // End of variables declaration//GEN-END:variables
