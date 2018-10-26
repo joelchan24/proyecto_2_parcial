@@ -5,9 +5,13 @@
  */
 package com.assistaff.GUI;
 
+import java.awt.GridBagConstraints;
+import java.awt.GridBagLayout;
 import java.net.URL;
 import javax.swing.ImageIcon;
 import javax.swing.JFrame;
+import javax.swing.JOptionPane;
+import javax.swing.JPanel;
 
 /**
  *
@@ -18,11 +22,35 @@ public class GUIInicio extends javax.swing.JFrame {
     /**
      * Creates new form GUIInicio
      */
+    GridBagLayout gbl = new  GridBagLayout();
+   GUIempleados pnl_empleados;
+   GUIpuesto pnl_puestos;
+   GUIfechaslaborales pnl_fechas;
+     GUIinicio_pestaña pnl_inicio;
     public GUIInicio() {
+         
+          pnl_empleados = new GUIempleados();
+          pnl_puestos = new GUIpuesto();
+          pnl_fechas= new GUIfechaslaborales();
+          pnl_inicio= new GUIinicio_pestaña();
         URL iconURL = getClass().getResource("../resources/ico.png");
         super.setIconImage(new ImageIcon(iconURL).getImage());
         super.setUndecorated(true);
         initComponents();
+        
+          panelMaster.setLayout(gbl);
+          GridBagConstraints c = new GridBagConstraints();
+          c.gridx=0;
+          c.gridy=0;
+          panelMaster.add(pnl_empleados,c);
+          panelMaster.add(pnl_puestos,c);
+           panelMaster.add(pnl_fechas,c);
+            panelMaster.add(pnl_inicio,c);
+          pnl_empleados.setVisible(false);
+            pnl_puestos.setVisible(false);
+             pnl_fechas.setVisible(false);
+              pnl_inicio.setVisible(true);
+          
         super.setLocationRelativeTo(null);
     }
 
@@ -73,6 +101,11 @@ public class GUIInicio extends javax.swing.JFrame {
         jlInicio.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/assistaff/resources/home.png"))); // NOI18N
         jlInicio.setText("    Inicio");
         jlInicio.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jlInicio.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jlInicioMouseClicked(evt);
+            }
+        });
 
         panelActivoInicio.setBackground(new java.awt.Color(21, 100, 191));
 
@@ -116,6 +149,11 @@ public class GUIInicio extends javax.swing.JFrame {
         jlPuestos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/assistaff/resources/file.png"))); // NOI18N
         jlPuestos.setText("    Puestos");
         jlPuestos.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jlPuestos.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jlPuestosMouseClicked(evt);
+            }
+        });
 
         panelActivoPuestos.setBackground(new java.awt.Color(21, 100, 191));
 
@@ -135,6 +173,11 @@ public class GUIInicio extends javax.swing.JFrame {
         jlFechasLaboeales.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/assistaff/resources/calendar.png"))); // NOI18N
         jlFechasLaboeales.setText("    Fechas laborales");
         jlFechasLaboeales.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jlFechasLaboeales.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jlFechasLaboealesMouseClicked(evt);
+            }
+        });
 
         panelActivoFechasLaborales.setBackground(new java.awt.Color(21, 100, 191));
 
@@ -275,6 +318,9 @@ public class GUIInicio extends javax.swing.JFrame {
         );
 
         panelMaster.setBackground(new java.awt.Color(255, 255, 255));
+        panelMaster.setMaximumSize(new java.awt.Dimension(960, 640));
+        panelMaster.setMinimumSize(new java.awt.Dimension(960, 640));
+        panelMaster.setName(""); // NOI18N
 
         javax.swing.GroupLayout panelMasterLayout = new javax.swing.GroupLayout(panelMaster);
         panelMaster.setLayout(panelMasterLayout);
@@ -326,8 +372,32 @@ public class GUIInicio extends javax.swing.JFrame {
     }//GEN-LAST:event_jlMinimizeMouseClicked
 
     private void jlEmpleadosMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlEmpleadosMouseClicked
-      
+ pnl_empleados.setVisible(true);
+            pnl_puestos.setVisible(false);
+            pnl_fechas.setVisible(false);
+            pnl_inicio.setVisible(false);
     }//GEN-LAST:event_jlEmpleadosMouseClicked
+
+    private void jlPuestosMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlPuestosMouseClicked
+       pnl_empleados.setVisible(false);
+            pnl_puestos.setVisible(true);
+            pnl_fechas.setVisible(false);
+             pnl_inicio.setVisible(false);
+    }//GEN-LAST:event_jlPuestosMouseClicked
+
+    private void jlFechasLaboealesMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlFechasLaboealesMouseClicked
+         pnl_empleados.setVisible(false);
+            pnl_puestos.setVisible(false);
+              pnl_fechas.setVisible(true);
+               pnl_inicio.setVisible(false);
+    }//GEN-LAST:event_jlFechasLaboealesMouseClicked
+
+    private void jlInicioMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlInicioMouseClicked
+        pnl_empleados.setVisible(false);
+            pnl_puestos.setVisible(false);
+              pnl_fechas.setVisible(false);
+               pnl_inicio.setVisible(true);
+    }//GEN-LAST:event_jlInicioMouseClicked
 
     /**
      * @param args the command line arguments

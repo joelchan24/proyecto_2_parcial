@@ -9,12 +9,12 @@ package com.assistaff.GUI;
  *
  * @author JOEL
  */
-public class GUIempleados extends javax.swing.JPanel {
+public class GUIfechaslaborales extends javax.swing.JPanel {
 
     /**
-     * Creates new form GUIempleados
+     * Creates new form GUIfechaslaborales
      */
-    public GUIempleados() {
+    public GUIfechaslaborales() {
         initComponents();
     }
 
@@ -29,23 +29,23 @@ public class GUIempleados extends javax.swing.JPanel {
 
         jLabel1 = new javax.swing.JLabel();
 
-        jLabel1.setText("empleados");
+        jLabel1.setText("fechas");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(211, Short.MAX_VALUE)
+                .addContainerGap(229, Short.MAX_VALUE)
                 .addComponent(jLabel1)
-                .addGap(138, 138, 138))
+                .addGap(139, 139, 139))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(105, 105, 105)
+                .addGap(123, 123, 123)
                 .addComponent(jLabel1)
-                .addContainerGap(181, Short.MAX_VALUE))
+                .addContainerGap(163, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 

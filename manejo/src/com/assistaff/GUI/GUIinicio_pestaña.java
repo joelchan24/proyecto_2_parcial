@@ -9,12 +9,12 @@ package com.assistaff.GUI;
  *
  * @author JOEL
  */
-public class GUIempleados extends javax.swing.JPanel {
+public class GUIinicio_pestaña extends javax.swing.JPanel {
 
     /**
-     * Creates new form GUIempleados
+     * Creates new form GUIinicio_pestaña
      */
-    public GUIempleados() {
+    public GUIinicio_pestaña() {
         initComponents();
     }
 
@@ -29,23 +29,27 @@ public class GUIempleados extends javax.swing.JPanel {
 
         jLabel1 = new javax.swing.JLabel();
 
-        jLabel1.setText("empleados");
+        setMaximumSize(new java.awt.Dimension(960, 640));
+        setMinimumSize(new java.awt.Dimension(960, 640));
+        setPreferredSize(new java.awt.Dimension(400, 300));
+
+        jLabel1.setText("inicio");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(211, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(152, 152, 152)
                 .addComponent(jLabel1)
-                .addGap(138, 138, 138))
+                .addContainerGap(785, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(105, 105, 105)
+                .addGap(124, 124, 124)
                 .addComponent(jLabel1)
-                .addContainerGap(181, Short.MAX_VALUE))
+                .addContainerGap(502, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
