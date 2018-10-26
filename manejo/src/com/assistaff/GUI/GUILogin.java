@@ -10,7 +10,7 @@ import javax.swing.ImageIcon;
 
 /**
  *
- * @author yotok
+ * @author Steven
  */
 public class GUILogin extends javax.swing.JFrame {
 
