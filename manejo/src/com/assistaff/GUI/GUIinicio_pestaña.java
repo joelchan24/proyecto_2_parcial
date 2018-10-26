@@ -31,7 +31,7 @@ public class GUIinicio_pestaña extends javax.swing.JPanel {
 
         setMaximumSize(new java.awt.Dimension(960, 640));
         setMinimumSize(new java.awt.Dimension(960, 640));
-        setPreferredSize(new java.awt.Dimension(400, 300));
+        setPreferredSize(new java.awt.Dimension(960, 640));
 
         jLabel1.setText("inicio");
 

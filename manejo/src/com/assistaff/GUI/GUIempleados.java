@@ -29,6 +29,10 @@ public class GUIempleados extends javax.swing.JPanel {
 
         jLabel1 = new javax.swing.JLabel();
 
+        setMaximumSize(new java.awt.Dimension(960, 640));
+        setMinimumSize(new java.awt.Dimension(960, 640));
+        setPreferredSize(new java.awt.Dimension(960, 640));
+
         jLabel1.setText("empleados");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
@@ -36,7 +40,7 @@ public class GUIempleados extends javax.swing.JPanel {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(211, Short.MAX_VALUE)
+                .addContainerGap(771, Short.MAX_VALUE)
                 .addComponent(jLabel1)
                 .addGap(138, 138, 138))
         );
@@ -45,7 +49,7 @@ public class GUIempleados extends javax.swing.JPanel {
             .addGroup(layout.createSequentialGroup()
                 .addGap(105, 105, 105)
                 .addComponent(jLabel1)
-                .addContainerGap(181, Short.MAX_VALUE))
+                .addContainerGap(521, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 

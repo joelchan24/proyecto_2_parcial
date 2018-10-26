@@ -42,7 +42,11 @@ public class GUIInicio extends javax.swing.JFrame {
           GridBagConstraints c = new GridBagConstraints();
           c.gridx=0;
           c.gridy=0;
-          panelMaster.add(pnl_empleados,c);
+//          panelMaster.add(pnl_empleados,c);
+//          panelMaster.add(pnl_puestos,c);
+//           panelMaster.add(pnl_fechas,c);
+//            panelMaster.add(pnl_inicio,c);
+            panelMaster.add(pnl_empleados,c);
           panelMaster.add(pnl_puestos,c);
            panelMaster.add(pnl_fechas,c);
             panelMaster.add(pnl_inicio,c);

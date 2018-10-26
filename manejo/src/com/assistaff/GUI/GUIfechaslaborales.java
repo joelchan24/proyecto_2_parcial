@@ -29,6 +29,10 @@ public class GUIfechaslaborales extends javax.swing.JPanel {
 
         jLabel1 = new javax.swing.JLabel();
 
+        setMaximumSize(new java.awt.Dimension(960, 640));
+        setMinimumSize(new java.awt.Dimension(960, 640));
+        setPreferredSize(new java.awt.Dimension(960, 640));
+
         jLabel1.setText("fechas");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
@@ -36,7 +40,7 @@ public class GUIfechaslaborales extends javax.swing.JPanel {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(229, Short.MAX_VALUE)
+                .addContainerGap(789, Short.MAX_VALUE)
                 .addComponent(jLabel1)
                 .addGap(139, 139, 139))
         );
@@ -45,7 +49,7 @@ public class GUIfechaslaborales extends javax.swing.JPanel {
             .addGroup(layout.createSequentialGroup()
                 .addGap(123, 123, 123)
                 .addComponent(jLabel1)
-                .addContainerGap(163, Short.MAX_VALUE))
+                .addContainerGap(503, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 

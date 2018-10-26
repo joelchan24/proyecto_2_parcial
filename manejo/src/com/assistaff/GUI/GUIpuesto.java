@@ -29,6 +29,10 @@ public class GUIpuesto extends javax.swing.JPanel {
 
         jLabel1 = new javax.swing.JLabel();
 
+        setMaximumSize(new java.awt.Dimension(960, 640));
+        setMinimumSize(new java.awt.Dimension(960, 640));
+        setPreferredSize(new java.awt.Dimension(960, 640));
+
         jLabel1.setText("puestos");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
@@ -38,14 +42,14 @@ public class GUIpuesto extends javax.swing.JPanel {
             .addGroup(layout.createSequentialGroup()
                 .addGap(159, 159, 159)
                 .addComponent(jLabel1)
-                .addContainerGap(203, Short.MAX_VALUE))
+                .addContainerGap(763, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(131, 131, 131)
                 .addComponent(jLabel1)
-                .addContainerGap(155, Short.MAX_VALUE))
+                .addContainerGap(495, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
